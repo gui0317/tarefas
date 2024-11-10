@@ -1,0 +1,150 @@
+/* Reset de margens e preenchimentos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos básicos do corpo da página */
+  body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #f0f4f8; /* Cor de fundo clara e agradável */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Estilos para o contêiner principal da aplicação */
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve para um efeito 3D */
+    padding: 30px;
+    max-width: 600px; /* Largura máxima para manter um layout agradável */
+    width: 100%;
+    max-height: 80vh; /* Limita a altura para evitar que ocupe a tela inteira */
+    overflow-y: auto; /* Adiciona rolagem quando necessário */
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  /* Estilos para o input e botões */
+  .input-container {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os elementos */
+    margin-bottom: 25px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  select {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Estilos gerais para todos os botões */
+  button {
+    padding: 12px;
+    background-color: #4e79a7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave no hover */
+  }
+  
+  button:hover {
+    background-color: #365f74; /* Cor mais escura ao passar o mouse */
+  }
+  
+  /* Estilos para a lista de tarefas */
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  /* Estilos para cada tarefa */
+  li {
+    background-color: #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  /* Cores diferentes para tarefas com diferentes prioridades */
+  li.baixa {
+    background-color: #b3e5fc;
+  }
+  
+  li.media {
+    background-color: #ffecb3;
+  }
+  
+  li.alta {
+    background-color: #ffab91;
+  }
+  
+  /* Estilos para os botões dentro da lista (concluir e remover) */
+  button.concluir {
+    background-color: #8bc34a;
+    margin-left: 10px;
+  }
+  
+  button.concluir:hover {
+    background-color: #689f38;
+  }
+  
+  button.remover {
+    background-color: #f44336;
+  }
+  
+  button.remover:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Estilo para tarefas concluídas */
+  .concluida {
+    text-decoration: line-through; /* Risca o texto */
+    color: #888;
+  }
+  
+  /* Estilo do botão para limpar todas as tarefas */
+  #limparTarefas {
+    background-color: #ff7043;
+    margin-top: 20px;
+  }
+  
+  #limparTarefas:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Estilos para o rodapé */
+  .footer-outside {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para o texto do rodapé */
+  .footer-outside p {
+    font-size: 16px;
+  }

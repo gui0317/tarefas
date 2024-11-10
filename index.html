@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma do documento como Português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para garantir que o site seja responsivo -->
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="tarefas.css"> <!-- Conecta o arquivo CSS externo -->
+</head>
+<body>
+  <!-- Contêiner principal que envolve todo o conteúdo da aplicação -->
+  <div class="container">
+    <!-- Cabeçalho com o título do aplicativo -->
+    <header>
+      <h1>Gerenciador de Tarefas 📝</h1>
+    </header>
+
+    <!-- Área principal para adicionar tarefas -->
+    <main>
+      <div class="input-container">
+        <!-- Campo de texto onde o usuário digita a tarefa -->
+        <input type="text" id="tarefaInput" placeholder="Digite sua tarefa...">
+        
+        <!-- Menu suspenso para selecionar a prioridade da tarefa -->
+        <select id="prioridadeSelect">
+          <option value="baixa">Baixa</option>
+          <option value="media">Média</option>
+          <option value="alta">Alta</option>
+        </select>
+        
+        <!-- Botão para adicionar a tarefa à lista -->
+        <button onclick="adicionarTarefa()">Adicionar Tarefa 🚀</button>
+      </div>
+
+      <!-- Lista onde as tarefas serão exibidas -->
+      <ul id="listaTarefas"></ul>
+      
+      <!-- Botão para limpar todas as tarefas da lista -->
+      <button id="limparTarefas" onclick="limparTodasTarefas()">Limpar Todas as Tarefas 🗑️</button>
+    </main>
+  </div>
+
+  <!-- Rodapé fora do contêiner principal para exibir o contato -->
+  <footer class="footer-outside">
+    <!-- Link para enviar um e-mail para o contato fornecido -->
+    <p>Contato: <a href="mailto:guilherme.castroa17@gmail.com">guilherme.castroa17@gmail.com</a></p>
+  </footer>
+
+  <!-- Conecta o arquivo JavaScript externo -->
+  <script src="tarefa.js"></script>
+</body>
+</html>
